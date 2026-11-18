@@ -4,13 +4,16 @@
  * and open the template in the editor.
  */
 package ejemplociclowhile;
+
 import java.util.Locale;
 import java.util.Scanner;
+
 /**
  *
  * @author reroes
  */
 public class Ejemplo02 {
+
     /**
      * @param args the command line arguments
      */
@@ -20,18 +23,18 @@ public class Ejemplo02 {
         entrada.useLocale(Locale.US);
         int limite;
         int contador = 1;
-        System.out.println("Ingrese el Límite"); 
+        System.out.println("Ingrese el Límite");
         limite = entrada.nextInt(); // 6
-        while (contador <= limite){
-            
-            if (contador%2!=0) {
-                System.out.printf("Contador %d\n", 
-                    contador);
+        while (contador <= limite) {
+
+            if (contador % 2 != 0) {
+                System.out.printf("Contador %d\n",
+                        contador);
             }
-            
+
             contador = contador + 1;
         }
-        
+
     }
 }
 /*
