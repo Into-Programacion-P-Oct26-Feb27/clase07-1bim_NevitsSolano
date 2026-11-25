@@ -30,6 +30,7 @@ public class Ejemplo05 {
         double promedio_final;
         double calificacion;
 
+        String cadenafinal = "Las notas ingresadas son: \n";
         System.out.println("Ingrese las notas de los estudiantes de su "
                 + "materia");
 
@@ -37,14 +38,22 @@ public class Ejemplo05 {
             System.out.printf("Ingrese calificación "
                     + "número %d\n", contador);
             calificacion = entrada.nextDouble();
+            cadenafinal = String.format("%s%.1f\n", cadenafinal,
+                    calificacion);
             suma_total = suma_total + calificacion;
             // contador
             contador = contador + 1;
         }
+        cadenafinal = String.format("%sLa suma de notas es: %.1f\n", cadenafinal,
+                suma_total);
 
         promedio_final = suma_total / limite;
 
-        System.out.printf("El promedio final es %f\n", promedio_final);
+        cadenafinal = String.format("%sPromedio es: %.2f\n", cadenafinal,
+                promedio_final);
+
+        //System.out.printf("El promedio final es %f\n", promedio_final);
+        System.out.printf("%s\n", cadenafinal);
 
     }
 }
