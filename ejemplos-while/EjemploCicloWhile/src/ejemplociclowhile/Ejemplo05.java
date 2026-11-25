@@ -44,8 +44,8 @@ public class Ejemplo05 {
             // contador
             contador = contador + 1;
         }
-        cadenafinal = String.format("%sLa suma de notas es: %.1f\n", cadenafinal,
-                suma_total);
+        cadenafinal = String.format("%sLa suma de notas es: %.1f\n", cadenafinal
+        ,suma_total);
 
         promedio_final = suma_total / limite;
 
@@ -57,3 +57,9 @@ public class Ejemplo05 {
 
     }
 }
+
+
+/*
+La cadena final en este ejercicio esta acumalando valores de tipo String, double
+,entero para presentarlos al final.
+*/
